@@ -1,4 +1,4 @@
-package factory;
+package factory_method;
 
 public class NYStyleCheesePizza extends Pizza {
     public NYStyleCheesePizza() {

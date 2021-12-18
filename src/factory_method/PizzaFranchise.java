@@ -1,7 +1,7 @@
-package factory;
+package factory_method;
 
 public class PizzaFranchise {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         PizzaStore nyStore = new NYPizzaStore();
         PizzaStore chicagoStore = new ChicagoPizzaStore();
         Pizza pizza;
