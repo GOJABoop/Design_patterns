@@ -33,12 +33,15 @@ public class RemoteControlTest {
 
         remoteControl.onButtonWasPushed(0);
         remoteControl.offButtonWasPushed(0);
+        remoteControl.undoButtonWasPushed();
         remoteControl.onButtonWasPushed(1);
+        remoteControl.undoButtonWasPushed();
         remoteControl.offButtonWasPushed(1);
         remoteControl.onButtonWasPushed(2);
         remoteControl.offButtonWasPushed(2);
         remoteControl.onButtonWasPushed(3);
         remoteControl.offButtonWasPushed(3);
+        remoteControl.undoButtonWasPushed();
         remoteControl.onButtonWasPushed(4);
         remoteControl.offButtonWasPushed(4);
     }
