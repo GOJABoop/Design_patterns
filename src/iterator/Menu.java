@@ -1,2 +1,5 @@
-package iterator;public interface Menu {
+package iterator;
+
+public interface Menu {
+    Iterator createIterator();
 }
