@@ -1,6 +1,6 @@
-package iterator;
+package iterator_and_composite;
 
-public class DinerMenu implements Menu {
+public class DinerMenu extends MenuComponent {
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
     MenuItem[] menuItems;
@@ -24,7 +24,6 @@ public class DinerMenu implements Menu {
         }
     }
 
-    @Override
     public Iterator createIterator() {
         return new DinerMenuIterator(menuItems);
     }
