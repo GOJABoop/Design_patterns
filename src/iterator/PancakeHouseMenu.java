@@ -1,8 +1,8 @@
-package iterator_and_composite;
+package iterator;
 
 import java.util.ArrayList;
 
-public class PancakeHouseMenu extends MenuComponent{
+public class PancakeHouseMenu implements Menu{
     ArrayList menuItems;
 
     public PancakeHouseMenu() {
@@ -15,6 +15,8 @@ public class PancakeHouseMenu extends MenuComponent{
     public void addItem(String name, String description, boolean vegetarian, double price) {
         MenuItem menuItem = new MenuItem(name, description, vegetarian, price); menuItems.add(menuItem);
     }
+
+    @Override
     public Iterator createIterator() {
         return new PancakeHouseMenuIterator(menuItems);
     }

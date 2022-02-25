@@ -1,6 +1,6 @@
-package iterator_and_composite;
+package iterator;
 
-public class MenuItem extends MenuComponent {
+public class MenuItem {
     String name;
     String description;
     boolean vegetarian;
@@ -27,14 +27,5 @@ public class MenuItem extends MenuComponent {
 
     public boolean isVegetarian() {
         return vegetarian;
-    }
-
-    public void print() {
-        System.out.print(" " + getName());
-        if (isVegetarian()) {
-            System.out.print("(v)");
-        }
-        System.out.println(", " + getPrice());
-        System.out.println(" -- " + getDescription());
     }
 }

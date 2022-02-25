@@ -1,4 +1,4 @@
-package iterator_and_composite;
+package composite;
 
 public abstract class MenuComponent {
     public void add(MenuComponent menuComponent) {

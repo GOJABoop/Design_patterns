@@ -1,19 +1,17 @@
-package iterator_and_composite;
+package iterator;
 
-import java.util.ArrayList;
-
-public class PancakeHouseMenuIterator implements Iterator {
-    ArrayList items;
+public class DinerMenuIterator implements Iterator {
+    MenuItem[] items;
     int position;
 
-    public PancakeHouseMenuIterator(ArrayList items) {
+    public DinerMenuIterator(MenuItem[] items) {
         this.items = items;
         position = 0;
     }
 
     @Override
     public boolean hasNext() {
-        if (position >= items.size() || items.get(position) == null) {
+        if (position >= items.length || items[position] == null) {
             return false;
         }
         else {
@@ -23,7 +21,7 @@ public class PancakeHouseMenuIterator implements Iterator {
 
     @Override
     public Object next() {
-        Object menuItem = items.get(position);
+        MenuItem menuItem = items[position];
         position = position + 1;
         return menuItem;
     }

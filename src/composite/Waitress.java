@@ -1,4 +1,4 @@
-package iterator_and_composite;
+package composite;
 
 public class Waitress {
     MenuComponent menus;

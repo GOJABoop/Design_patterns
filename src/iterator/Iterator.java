@@ -1,4 +1,4 @@
-package iterator_and_composite;
+package iterator;
 
 public interface Iterator {
     boolean hasNext();
